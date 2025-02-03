@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gestão de Produtos</h1>
+
+    <div class="form-group">
+        <label for="idProduto">ID do Produto:</label>
+        <input type="text" id="idProduto" placeholder="Digite o ID">
+    </div>
+    <div class="form-group">
+        <label for="nomeProduto">Nome do Produto:</label>
+        <input type="text" id="nomeProduto" placeholder="Digite o nome">
+    </div>
+    <div class="form-group">
+        <label for="quantidadeProduto">Quantidade:</label>
+        <input type="number" id="quantidadeProduto" placeholder="Digite a quantidade">
+    </div>
+    <div class="form-group">
+        <label for="categoriaProduto">Categoria:</label>
+        <input type="text" id="categoriaProduto" placeholder="Digite a categoria">
+    </div>
+    <div class="form-group">
+        <button onclick="adicionarProduto()">Adicionar Produto</button>
+        <button onclick="atualizarProduto()">Atualizar Produto</button>
+        <button onclick="localizarProduto()">Localizar Produto</button>
+        <button onclick="removerProduto()">Remover Produto</button>
+    </div>
+
+    <h2>Lista de Produtos</h2>
+    <ul id="produtos-list"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
